@@ -1,0 +1,1 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');   $config['appId']	    = '1058125220883314';   $config['secret']	= 'ab7c3772bd8525aff73691d9dd77bca3';   $config['cookie'] 	= TRUE;
