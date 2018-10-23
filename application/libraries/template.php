@@ -2,60 +2,32 @@
 	
 
 
-    function dinas_pendidikan($view=null,$data=null){
+    function data($view=null,$data=null){
         $ci =& get_instance();
         $ci->load->model('Facebook_Model', 'fb');
         $ci->getFbUser = $ci->fb->getUser();
         $ci->data['getFbUser'] = $ci->getFbUser;
         //$data['recaptcha'] = $ci->recaptcha->recaptcha_get_html();
         
-		$ci->load->view('admin/template/bg_header', $data);  
-		$ci->load->view('admin/template/bg_left', $data);        
+		$ci->load->view('admin/template/bg_header', $data);        
+		$ci->load->view('admin/template/bg_top', $data);  
+		$ci->load->view('admin/template/bg_left', $data);      
         $ci->load->view('admin/'.$view, $data);
-        $ci->load->view('admin/template/bg_footer', $data);    	
+        $ci->load->view('admin/template/bg_footer', $data);
     }
 
-    function bird($view=null,$data=null){
+    function masjid_enduser($view=null,$data=null){
         $ci =& get_instance();
         $ci->load->model('Facebook_Model', 'fb');
         $ci->getFbUser = $ci->fb->getUser();
         $ci->data['getFbUser'] = $ci->getFbUser;
         //$data['recaptcha'] = $ci->recaptcha->recaptcha_get_html();
         
-		$ci->load->view('enduser/template/bg_header', $data);    
-		$ci->load->view('enduser/template/bg_top', $data);       
+		$ci->load->view('enduser/template/bg_header', $data);        ;      
         $ci->load->view('enduser/'.$view, $data);
-        $ci->load->view('enduser/template/bg_bottom', $data);   
-        $ci->load->view('enduser/template/bg_footer', $data);    	
+        $ci->load->view('enduser/template/bg_footer', $data);
     }
 
-    function bird_index($view=null,$data=null){
-        $ci =& get_instance();
-        $ci->load->model('Facebook_Model', 'fb');
-        $ci->getFbUser = $ci->fb->getUser();
-        $ci->data['getFbUser'] = $ci->getFbUser;
-        //$data['recaptcha'] = $ci->recaptcha->recaptcha_get_html();
-        
-		$ci->load->view('enduser/template/bg_header', $data);    
-		//$ci->load->view('enduser/template/bg_top', $data);       
-        $ci->load->view('enduser/'.$view, $data);
-        //$ci->load->view('enduser/template/bg_bottom', $data);   
-        $ci->load->view('enduser/template/bg_footer', $data);    	
-    }
-
-    function dinas_pendidikan_front2($view=null,$data=null){
-        $ci =& get_instance();
-        $ci->load->model('Facebook_Model', 'fb');
-        $ci->getFbUser = $ci->fb->getUser();
-        $ci->data['getFbUser'] = $ci->getFbUser;
-        //$data['recaptcha'] = $ci->recaptcha->recaptcha_get_html();
-        
-		$ci->load->view('enduser/template2/bg_header', $data);
-		$ci->load->view('enduser/template2/bg_right', $data);          
-        $ci->load->view('enduser/'.$view, $data);
-        $ci->load->view('enduser/template2/bg_footer', $data);    	
-    }
-	
 		function paging1($pg,$uri,$url,$limit){
         $ci =& get_instance();
         $pg=$pg;
