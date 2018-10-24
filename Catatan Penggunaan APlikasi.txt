@@ -1,0 +1,15 @@
+User login :
+
+1. Admin ---> Level Administrator
+	User : admin
+	Password : admin
+2. Karyawan ---> Level Karyawan
+	User : karyawan
+	Password : admin
+3. Administrasi ---> Level Administrasi IT
+	User : administrasi
+	Password : admin
+
+
+
+Database untuk aplikasi ini : pt_test.sql

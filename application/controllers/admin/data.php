@@ -67,4 +67,17 @@ class Data extends CI_Controller {
         $this->template->data('data_server/bg_index',$this->data);        
     }
 
+    public function proses_data(){
+        $id = $this->input->post('id');
+        $tanggal_perbaikan = $this->input->post('tanggal_perbaikan');
+        $handel = $this->input->post('handel');
+        $status = $this->input->post('status');
+
+        $update = $this->db->set('date_request',date("Y-m-d",strtotime($tanggal_perbaikan))->set('to',$handel)->set('flag_status',$status)->where('id',$id)->update('tb_data_pelaporan');
+
+        if($update){
+            echo "1";
+        }
+    }
+
 }

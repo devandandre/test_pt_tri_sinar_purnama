@@ -77,9 +77,9 @@ echo"
                                     </div>
                                     <div class='modal-body'>
                                       <div class='form-group'>
-                                          <label class='col-sm-12 col-sm-12 control-label'>Judul Pelaporan</label>
+                                          <label class='col-sm-12 col-sm-12 control-label'>Tanggal Perbaikan</label>
                                           <div class='col-sm-12'>
-                                              <input type='text' class='form-control' id='judul' name='judul'>
+                                              <input type='text' class='form-control datepicker' id='tanggal_perbaikan' name='tanggal_perbaikan'>
                                           </div>
                                       </div>
                                       <div class='form-group'>
@@ -103,12 +103,13 @@ echo"
                                               </select>
                                           </div>
                                       </div>
+                                      <div class='form-group' style='margin-top:50px'>
+                                        <button type='button' class='btn btn-default' data-dismiss='modal'>Tidak</button>
+                                        <button type='button' class='btn btn-primary' onclick=javascript:proses_data(".$data->id.")>Ya</button>
+                                      </div>
                                     </div>
                                     <br>
-                                    <div class='modal-footer'>
-                                      <button type='button' class='btn btn-default' data-dismiss='modal'>Tidak</button>
-                                      <button type='button' class='btn btn-primary' onclick=javascript:proses_data(".$data->id.")>Ya</button>
-                                    </div>
+
                                   </div>
                                 </div>
                               </div>
