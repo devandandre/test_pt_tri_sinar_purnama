@@ -10,7 +10,14 @@ echo"
           </div>
       </footer> -->
       <!--footer end-->
+    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
 
+  <script>
+  $(function() {
+    $('.datepicker').datepicker();
+  } );
+  </script>
     <!-- js placed at the end of the document so the pages load faster -->
     <script src='".base_url("design/assets/js/jquery.js")."'></script>
     <script src='".base_url("design/assets/js/jquery-1.8.3.min.js")."'></script>
@@ -30,14 +37,7 @@ echo"
     <!--script for this page-->
     <script src='".base_url("design/assets/js/sparkline-chart.js")."'></script>    
 	<script src='".base_url("design/assets/js/zabuto_calendar.js")."'></script>
-    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
-    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
 
-  <script>
-  $(function() {
-    $('.datepicker').datepicker();
-  } );
-  </script>
     <script>var base_url = '".base_url()."'</script>";
 
 

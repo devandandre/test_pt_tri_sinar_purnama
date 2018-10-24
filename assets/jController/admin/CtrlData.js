@@ -29,17 +29,10 @@
 				data: 'id='+id+'&tanggal_perbaikan='+tanggal_perbaikan+'&handel='+handel+'&status='+status,
 				url: base_url+'admin/data/proses_data',
        			success: function(msg) {
-					if(msg == 1){
 						$.ambiance({message: "Sukses",
 		                type: "success",
 		                fade: false});
 						top.location.href = base_url+'admin/data/data_pelaporan';						
-					}else{
-		                $.ambiance({message: "Gagal",
-		                type: "error",
-		                fade: false});
-
-					}
 				}
 		});
 
