@@ -40,7 +40,7 @@ echo"
                                   if($data->to == 0){
                                     $too = "";
                                   }else{
-                                    $too = $data->to;
+                                    $too = $data->nama_user_to;
                                   }
                                   echo"
                                   <td>".$too."</td>
