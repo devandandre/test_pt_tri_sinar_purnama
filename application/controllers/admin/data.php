@@ -73,7 +73,7 @@ class Data extends CI_Controller {
         $handel = $this->input->post('handel');
         $status = $this->input->post('status');
 
-        $update = $this->db->set('date_request',date("Y-m-d",strtotime($tanggal_perbaikan))->set('to',$handel)->set('flag_status',$status)->where('id',$id)->update('tb_data_pelaporan');
+        $update = $this->db->set('date_request',date("Y-m-d",strtotime($tanggal_perbaikan)))->set('to',$handel)->set('flag_status',$status)->where('id',$id)->update('tb_data_pelaporan');
 
         if($update){
             echo "1";
